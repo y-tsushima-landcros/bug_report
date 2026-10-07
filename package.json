@@ -1,0 +1,16 @@
+{
+  "name": "mastra-converttools-leak-repro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal reproduction: Agent.convertTools() retains sub-agent tool schemas on every call",
+  "scripts": {
+    "repro": "node --expose-gc repro.mjs",
+    "control": "node --expose-gc repro.mjs --no-sub-agents"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "3.0.112",
+    "@mastra/core": "1.74.0",
+    "zod": "3.25.76"
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+*.heapsnapshot
+.env
+.env.*
